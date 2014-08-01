@@ -1,4 +1,68 @@
 * {
+    outline: red 1px solid;
+}
+
+body {
+    background-color:black;
+}
+
+.main {
+    background-color:white;
+    margin-top: 110px;
+    padding-left: 100px;
+    min-width: 1200px;
+    height: 500px;
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+    background-repeat: no-repeat;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing {
+    width: 659px;
+    height: 494px;
+}
+
+.ryu-ready, .ryu-throwing {
+    display: none;
+}
+
+.ryu-ready {
+    background-image: url("../images/ryu-ready-position.gif");
+}
+
+.ryu-still {
+    background-image: url("../images/ryu-standing-still.png");
+}
+
+.ryu-throwing {
+    background-image: url("../images/ryu-throwing-hadouken.png");
+}
+
+.hadouken {
+    background-image: url("../images/hadouken.gif");
+    width: 156px;
+    height: 90px;
+    /* display: none; */
+    float: left;
+    top: 170px;
+    left: 540px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*          This was my own beginning but thinkful wanted us to do it another way. To avoid possible probs, I will.
+* {
     background-color: black;
 }
 
@@ -16,3 +80,5 @@
     margin: 0 0 0 100px;
     height: 400px;
 }
+
+*/
