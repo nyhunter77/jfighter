@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: red 1px solid;
-}
+} */
 
 body {
     background-color:black;
@@ -45,7 +45,7 @@ body {
     height: 90px;
     /* display: none; */
     float: left;
-    top: 170px;
+    top: -319px;
     left: 540px;
     position: relative;
 }
