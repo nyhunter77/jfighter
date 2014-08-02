@@ -6,5 +6,7 @@ $(document).ready(function() {
     });
     $(".ryu").mouseleave(function() {
         console.log("mouse left");
+        $(".ryu-still").show();
+        $(".ryu-ready").hide();
     });
 });
