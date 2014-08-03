@@ -13,7 +13,15 @@ $(document).ready(function() {
         console.log("mousedown");
         $(".ryu-ready").hide();
         $(".ryu-throwing").show();
-        $(".hadouken").show();
+        $(".hadouken").finish().show()
+        .animate(
+            {"left":"900px"},500,
+            function() {
+            $(this).hide();
+            $(this).css("left", "540px");
+        }
+    );
+                 
         //play sound
         //animate fireball to right
         })
