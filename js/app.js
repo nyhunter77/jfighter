@@ -37,23 +37,35 @@ $(document).ready(function() {
         $(".ryu-cool").hide();
         //ryu goes back to ready
     })
-    
+   
     .keydown(function() {
-        $("input").keydown(function(){
+        var x = jQuery.Event("keydown");
+        x.which = 88; // # Some key code value
+        $("input").trigger(x);
         alert("key is down");
         $(".ryu-ready").hide();
         $(".ryu-still").hide();
         $(".ryu-cool").show();
-        });
-    });
+    });    
+
     //be cool at the end
     //hide ready and still poses when x is pressed 
     //show cool pose when x is pressed images/ryu-cool.gif
     //when x is released, go back to still pose
-});
+    
+    //test
+    $("input").keydown(function() {
+        $("input").css("background-color","grey");
+        //alert("text is in");
+        $(".ryu-ready").hide();
+        $(".ryu-still").hide();
+        $(".ryu-cool").show();
+    });
 
-function playHadouken() {
-    $("#hadouken-sound")[0].volume = 0.5;
-    $("#hadouken-sound")[0].load();
-    $("#hadouken-sound")[0].play();
-}
+    function playHadouken() {
+        $("#hadouken-sound")[0].volume = 0.5;
+        $("#hadouken-sound")[0].load();
+        $("#hadouken-sound")[0].play();
+    };
+
+});
