@@ -38,40 +38,32 @@ $(document).ready(function() {
         //ryu goes back to ready
     })
    
-    .keydown(function(e) {
-        //var x = jQuery.Event("keydown");
-        //x.which = 88; // # Some key code value
-        //$("input").trigger(x);
+    .keydown(function(x) {
         //alert("key is down");
         //If keydown = x (88), then do this ...
-        if (e.keyCode == 88) {
+        if (x.keyCode == 88) {
+            console.log(x);
+            $(".ryu-ready").hide();
+            $(".ryu-still").hide();
+            $(".ryu-cool").show();
+        }})
+        
+    .keyup(function() {
+        console.log ("key is up")
         $(".ryu-ready").hide();
-        $(".ryu-still").hide();
-        $(".ryu-cool").show();
-        }
-    });    
+        $(".ryu-still").show();
+        $(".ryu-cool").hide();           
+    })
+        
 
     //be cool at the end
     //hide ready and still poses when x is pressed 
     //show cool pose when x is pressed images/ryu-cool.gif
     //when x is released, go back to still pose
     
-    //test
- //   $("input").keydown(function() {
- //       $("input").css("background-color","grey");
- //       // IF keydown = 88 show ryucool
- //       //alert("text is in");
- //       //if (input == "88") {
- //       $(".ryu-ready").hide();
- //       $(".ryu-still").hide();
- //       $(".ryu-cool").show();
- //       // };
- //   });
-
     function playHadouken() {
         $("#hadouken-sound")[0].volume = 0.5;
         $("#hadouken-sound")[0].load();
         $("#hadouken-sound")[0].play();
     };
-
 });

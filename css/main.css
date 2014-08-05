@@ -58,36 +58,3 @@ body {
     left: 540px;
     position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*          This was my own beginning but thinkful wanted us to do it another way. To avoid possible probs, I will.
-* {
-    background-color: black;
-}
-
-.stripe {
-    margin-top: 100px;
-    border-top: 5px solid red;
-    border-bottom: 5px solid red;
-    background-color:white;
-    height: 405px;
-}
-
-#ryu {
-    border: 2px solid blue;
-    background: white;
-    margin: 0 0 0 100px;
-    height: 400px;
-}
-
-*/
