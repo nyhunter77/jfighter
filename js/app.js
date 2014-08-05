@@ -56,10 +56,13 @@ $(document).ready(function() {
     //test
     $("input").keydown(function() {
         $("input").css("background-color","grey");
+        // IF keydown = 88 show ryucool
         //alert("text is in");
+        //if (input == "88") {
         $(".ryu-ready").hide();
         $(".ryu-still").hide();
         $(".ryu-cool").show();
+        // };
     });
 
     function playHadouken() {
