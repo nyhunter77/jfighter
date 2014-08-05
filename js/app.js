@@ -39,10 +39,10 @@ $(document).ready(function() {
     })
    
     .keydown(function() {
-        var x = jQuery.Event("keydown");
-        x.which = 88; // # Some key code value
-        $("input").trigger(x);
-        alert("key is down");
+        //var x = jQuery.Event("keydown");
+        //x.which = 88; // # Some key code value
+        //$("input").trigger(x);
+        //alert("key is down");
         $(".ryu-ready").hide();
         $(".ryu-still").hide();
         $(".ryu-cool").show();
