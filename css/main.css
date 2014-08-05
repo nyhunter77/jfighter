@@ -58,3 +58,11 @@ body {
     left: 540px;
     position: relative;
 }
+
+img {
+    position: absolute;
+    float:right;
+    height:200px;
+    bottom:100px;
+    left:900px;
+}
