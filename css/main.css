@@ -66,3 +66,21 @@ img {
     top:125px;
     left:900px;
 }
+
+.fireball {
+    position: absolute;
+    float:right;
+    color:orange;
+    font-size: 1.5em;
+    top: 350px;
+    left: 700px;
+}
+
+.pose {
+    position: absolute;
+    float:right;
+    color:blue;
+    font-size: 1.5em;
+    left: 600px;
+    top: 400px;
+}
